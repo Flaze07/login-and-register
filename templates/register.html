@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<HTML>
+<body>
+	{% if fail %}
+		<div style='color: red'>The account with said username already exist</div>
+	{% endif %}
+	<div>
+		<form action='' id='registerform' method='POST'>
+			username: <input type='text' name='username'>
+			password: <input type='text' name='password'>
+			<input type='submit'>
+		</form>
+	</div>
+</body>
+</HTML>

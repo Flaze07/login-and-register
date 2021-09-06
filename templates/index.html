@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+	<link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='index.css') }}">
+</head>	
+<body>
+	<div id='main-div'>
+		<div>
+			please login or register into this website
+		</div>
+		<div>
+			<form action='/login' method='GET' id='loginform'>
+				<button type="button" class='button-style' id='loginbtn'>LOGIN</button>
+			</form>
+			<form action='/register' method='GET' id='registerform'>
+				<button type='button' class='button-style' id='registerbtn'>REGISTER</button>
+			</form>
+			<form action='/waifu' method='GET' id='waifuform'>
+				<button type='button' class='button-style' id='waifubtn'> SEE WAIFU!</button>
+			</form>
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</HTML>
