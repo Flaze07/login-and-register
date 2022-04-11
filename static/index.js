@@ -14,4 +14,4 @@ const waifubtn = document.getElementByid('waifubtn');
 
 waifuBtn.addEventListener('click', event => {
 	document.getElementByid('waifuform').submit();
-})
+});
